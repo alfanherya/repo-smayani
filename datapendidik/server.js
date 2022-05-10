@@ -7,6 +7,8 @@ const cekdatagururoutes = require('./routes/routes.cekdataguru');
 const swaggerUi = require('swagger-ui-express'),
     swaggerDocument = require('./swagger.json');
 
+
+app.use(cors());
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
