@@ -2,14 +2,14 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const morgan = require('morgan');
+// const morgan = require('morgan');
 const cekdatagururoutes = require('./routes/routes.cekdataguru');
 // const swaggerUi = require('swagger-ui-express'),
 //     swaggerDocument = require('./swagger.json');
 
 
 app.use(cors());
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/', cekdatagururoutes);
