@@ -3,6 +3,6 @@ const router = express.Router();
 const db = require('../config/db.config');
 const controller = require('../controllers/index');
 
-router.post('/cekdataguru', controller.cekdataguru.getdataguru);
+router.get('/cekdata', controller.cekdataguru.getdataguru);
 
 module.exports = router;
